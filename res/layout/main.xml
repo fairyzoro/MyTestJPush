@@ -4,12 +4,29 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
         >
-
-    <TextView
-            android:layout_width="fill_parent"
+    <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="使用drawable来方式图片错位，并使用极光推送"
-            />
+            >
+        <Button
+                android:id="@+id/btnToJPush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="btnToJPush"
+                android:layout_alignParentRight="true"
+                android:text="跳转到JPush"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用drawable来方式图片错位，并使用极光推送"
+                android:layout_alignParentLeft="true"
+                android:singleLine="false"
+                android:layout_toLeftOf="@id/btnToJPush"
+                />
+
+    </RelativeLayout>
+
     <ListView
             android:id="@+id/list_view"
             android:layout_width="match_parent"
